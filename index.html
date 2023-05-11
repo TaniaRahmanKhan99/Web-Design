@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap</title>
+        <meta charset = "UTF-8">
+        <meta name="Keyword" content="HTML, CSS, Python, JavaScript">
+        <meta name="author" content="Tania Rahman Khan">
+        <meta name="description" content="Web Development">   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+        <link href="style.css" rel="stylesheet" >
+        
+
+        <style>
+        </style>
+
+
+
+    </head>     
+
+    <body>
+
+        <!--LOGO
+
+        <div class="container text-center">
+            <img src="images/Google_2015_logo.svg.png" width="300px" title="Google">
+        </div>
+
+        -->
+
+
+        <!--Navigation Bar-->
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img src="images/nav-logo-new.png" title="Google" style="height: 25px; width: 35px;"></a>
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                   
+                </button>
+              </div>
+    
+
+              <div class="collapse navbar-collapse" id="mynavbar">
+
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Documentation <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Layout</a></li>
+                        <li><a href="#">Content</a></li>
+                        <li><a href="#">Components</a></li>
+                        <li><a href="#">List Group</a></li>
+                    </ul>
+                    </li> 
+
+                    <li><a href="#">Examples</a></li>
+                    <li><a href="#">Themes</a></li>
+                    <li><a href="#">Expo</a></li>
+                    <li><a href="#">Blog</a></li>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact Us <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                        <li><a href="#">CareerS</a></li>
+                        <li><a href="#">FAQS</a></li>                     
+                        </ul>
+                    </li>
+
+                </ul>
+              
+
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+
+              </div>
+
+
+            </div>
+          </nav>
+
+
+
+          <!--Image slider-->
+
+          <div class="container-fluid">
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top: -20px; margin-left: -15px; margin-right: -15px;">
+
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+              </ol>
+          
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+          
+                <div class="item active">
+                  <img src="images/2661059-1536x864-[DesktopNexus.com].jpg" alt="Los Angeles" style="width:100%; height: 700px;"> 
+                  <div class="carousel-caption">
+                    <h3><a href="#" style="background-color: rgb(52, 116, 50); color: white; padding: 15px; border-radius: 30px; margin-left: -950px; margin-bottom: 250px;">
+                      Shop Now <i class="fa-sharp fa-solid fa-bag-shopping"></i> </a></h3>
+                  </div> 
+                </div>
+          
+                <div class="item">
+                  <img src="images/2315163-1536x864-[DesktopNexus.com].jpg" alt="Chicago" style="width:100%; height: 700px;">  
+                  <div class="carousel-caption">
+                    <h3><a href="#" style="background-color: rgb(52, 116, 50); color: white; padding: 15px; border-radius: 30px; margin-left: -950px; margin-bottom: 250px;">
+                      Shop Now <i class="fa-sharp fa-solid fa-bag-shopping"></i> </a></h3>
+                  </div>                 
+                </div>
+              
+                <div class="item">
+                  <img src="images/2573895-1536x864-[DesktopNexus.com].jpg" alt="New York" style="width:100%; height: 700px;">  
+                  <div class="carousel-caption">
+                    <h3><a href="#" style="background-color: rgb(52, 116, 50); color: white; padding: 15px; border-radius: 30px; margin-left: -950px; margin-bottom: 250px;">
+                      Shop Now <i class="fa-sharp fa-solid fa-bag-shopping"></i> </a></h3>
+                  </div>               
+                </div>
+
+                <div class="item">
+                    <img src="images/cake-dessert.jpg" alt="New York" style="width:100%; height: 700px;">   
+                    <div class="carousel-caption">
+                      <h3><a href="#" style="background-color: rgb(52, 116, 50); color: white; padding: 15px; border-radius: 30px; margin-left: -950px; margin-bottom: 250px;">
+                        Shop Now <i class="fa-sharp fa-solid fa-bag-shopping"></i> </a></h3>
+                    </div>              
+                  </div>
+            
+              </div>
+          
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+
+
+
+
+          <!-- CAKES section-->
+
+          <div class="container text-center">
+            <h1 style="font-family: cursive; color: palevioletred;">CAKES</h1>
+            <br>
+            <h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Every cake has a texture and flavor story to tell your taste buds. From fluffy sponges and silky-smooth cheesecakes to fruity, fudgy, nutty, coffee, chocolatey, vanilla and confetti, consider yourself covered
+            </h4>
+            <h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"></h4>
+            <br>
+            <br>
+
+
+            <div class="row text-center">
+
+              <div class="col-md-4 thumbnail box"  style="border-radius: 20px; margin: 10px; width: 360px; height: 543;"> 
+                <img src="images/2.jpg" style="width: 100%; border-radius: 20px; height: 300px;">
+                <div class="caption" style="padding: 15px;" >
+                  
+                    <h5 style="font-family: cursive; color: palevioletred;">
+                      <b>Whipped Lemon and Raspberry Cake</b>
+                      <br>
+                      <br>
+                      <br>
+                      <sapn style="font-family: cursive; background-color: palevioletred; color: white; padding: 12px; border-radius: 30px;">
+                        <i class="fa fa-cart-shopping"></i> ADD TO CART
+                      </span>
+                    </h5>
+                    <br>
+                    <h4>AED220.00</h4>
+                    <h4>This cake is the perfect balance of sweet raspberr...</h4>
+                    <a href="#home"><h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:palevioletred ;">Read more</h4></a>
+
+                </div>
+              </div>
+
+
+
+              <div class="col-md-4 thumbnail box"  style="border-radius: 20px; margin: 10px; width: 360px; height: 543;"> 
+                <img src="images/3.png" style="width: 100%; border-radius: 20px; height: 300px;">
+                <div class="caption" style="padding: 15px;" >
+                  
+                    <h5 style="font-family: cursive; color: palevioletred;">
+                      <b>Sticky Date Cake</b>
+                      <br>
+                      <br>
+                      <br>
+                      <sapn style="font-family: cursive; background-color: palevioletred; color: white; padding: 12px; border-radius: 30px;">
+                        <i class="fa fa-cart-shopping"></i> ADD TO CART
+                      </span>
+                    </h5>
+                    <br>
+                    <h4>AED200.00</h4>
+                    <h4>We've transformed the classic British dessert into...</h4>
+                    <a href="#home"><h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:palevioletred ;">Read more</h4></a>
+
+                </div>
+              </div>
+
+
+              <div class="col-md-4 thumbnail box"  style="border-radius: 20px; margin: 10px; width: 360px; height: 543;"> 
+                <img src="images/pistach-yo_1.jpg" style="width: 100%; border-radius: 20px; height: 300px;">
+                <div class="caption" style="padding: 15px;" >
+                  
+                    <h5 style="font-family: cursive; color: palevioletred;">
+                      <b>Pistach-yo and Saffron Cake</b>
+                      <br>
+                      <br>
+                      <br>
+                      <sapn style="font-family: cursive; background-color: palevioletred; color: white; padding: 12px; border-radius: 30px;">
+                        <i class="fa fa-cart-shopping"></i> ADD TO CART
+                      </span>
+                    </h5>
+                    <br>
+                    <h4>AED230.00</h4>
+                    <h4>This rustic-chic layered pistachio cake is full of...</h4>
+                    <a href="#home"><h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:palevioletred ;">Read more</h4></a>
+
+                </div>
+              </div>
+
+
+              <div class="col-sm-4 thumbnail box"  style="border-radius: 20px; margin: 10px; width: 360px; height: 543;"> 
+                <img src="images/6.png" style="width: 100%; border-radius: 20px; height: 300px;">
+                <div class="caption" style="padding: 15px;" >
+                  
+                    <h5 style="font-family: cursive; color: palevioletred;">
+                      <b>Lotus n' Honey Delight</b>
+                      <br>
+                      <br>
+                      <br>
+                      <sapn style="font-family: cursive; background-color: palevioletred; color: white; padding: 12px; border-radius: 30px;">
+                        <i class="fa fa-cart-shopping"></i> ADD TO CART
+                      </span>
+                    </h5>
+                    <br>
+                    <h4>AED245.00</h4>
+                    <h4>Four fluffy honey cake layers and filled with hone...</h4>
+                    <a href="#home"><h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:palevioletred ;">Read more</h4></a>
+
+                </div>
+              </div>
+
+
+              <div class="col-sm-4 thumbnail box"  style="border-radius: 20px; margin: 10px; width: 360px; height: 543;"> 
+                <img src="images/5.jpg" style="width: 100%; border-radius: 20px; height: 300px;">
+                <div class="caption" style="padding: 15px;" >
+                  
+                    <h5 style="font-family: cursive; color: palevioletred;">
+                      <b>Red Velvet Crunch Cake with Oreo</b>
+                      <br>
+                      <br>
+                      <br>
+                      <sapn style="font-family: cursive; background-color: palevioletred; color: white; padding: 12px; border-radius: 30px;">
+                        <i class="fa fa-cart-shopping"></i> ADD TO CART
+                      </span>
+                    </h5>
+                    <br>
+                    <h4>AED215.00</h4>
+                    <h4>Our irresistible best-selling cake. It's a fluff...</h4>
+                    <a href="#home"><h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:palevioletred ;">Read more</h4></a>
+
+                </div>
+              </div>
+
+
+              <div class="col-sm-4 thumbnail box"  style="border-radius: 20px; margin: 10px; width: 360px; height: 543;"> 
+                <img src="images/4.jpg" style="width: 100%; border-radius: 20px; height: 300px;">
+                <div class="caption" style="padding: 15px;" >
+                  
+                    <h5 style="font-family: cursive; color: palevioletred;">
+                      <b>NAKED STRAWBERRY SHORTCAKE</b>
+                      <br>
+                      <br>
+                      <br>
+                      <sapn style="font-family: cursive; background-color: palevioletred; color: white; padding: 12px; border-radius: 30px;">
+                        <i class="fa fa-cart-shopping"></i> ADD TO CART
+                      </span>
+                    </h5>
+                    <br>
+                    <h4>AED290.00</h4>
+                    <h4>An absolutely delicious and beautifully rustic, fl...</h4>
+                    <a href="#home"><h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:palevioletred ;">Read more</h4></a>
+
+                </div>
+              </div>
+
+
+              <div class="col-sm-4 thumbnail box"  style="border-radius: 20px; margin: 10px; width: 360px; height: 543;"> 
+                <img src="images/7.jpg" style="width: 100%; border-radius: 20px; height: 300px;">
+                <div class="caption" style="padding: 15px;" >
+                  
+                    <h5 style="font-family: cursive; color: palevioletred;">
+                      <b>White Velvet Party Cake</b>
+                      <br>
+                      <br>
+                      <br>
+                      <sapn style="font-family: cursive; background-color: palevioletred; color: white; padding: 12px; border-radius: 30px;">
+                        <i class="fa fa-cart-shopping"></i> ADD TO CART
+                      </span>
+                    </h5>
+                    <br>
+                    <h4>AED205.00</h4>
+                    <h4>Inspired by pure nostalgia, this Funfetti cake tas...</h4>
+                    <a href="#home"><h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:palevioletred ;">Read more</h4></a>
+
+                </div>
+              </div>
+
+
+              <div class="col-sm-4 thumbnail box"  style="border-radius: 20px; margin: 10px; width: 360px; height: 543;"> 
+                <img src="images/8.jpg" style="width: 100%; border-radius: 20px; height: 300px;">
+                <div class="caption" style="padding: 15px;" >
+                  
+                    <h5 style="font-family: cursive; color: palevioletred;">
+                      <b>Blueberry Cheesecake</b>
+                      <br>
+                      <br>
+                      <br>
+                      <sapn style="font-family: cursive; background-color: palevioletred; color: white; padding: 12px; border-radius: 30px;">
+                        <i class="fa fa-cart-shopping"></i> ADD TO CART
+                      </span>
+                    </h5>
+                    <br>
+                    <h4>AED265.00</h4>
+                    <h4>A silky smooth and creamy New York style cheesecak...</h4>
+                    <a href="#home"><h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:palevioletred ;">Read more</h4></a>
+
+                </div>
+              </div>
+
+
+              <div class="col-sm-4 thumbnail box"  style="border-radius: 20px; margin: 10px; width: 360px; height: 543;"> 
+                <img src="images/9.jpg" style="width: 100%; border-radius: 20px; height: 300px;">
+                <div class="caption" style="padding: 15px;" >
+                  
+                    <h5 style="font-family: cursive; color: palevioletred;">
+                      <b>Mocha Choca CheeseCake</b>
+                      <br>
+                      <br>
+                      <br>
+                      <sapn style="font-family: cursive; background-color: palevioletred; color: white; padding: 12px; border-radius: 30px;">
+                        <i class="fa fa-cart-shopping"></i> ADD TO CART
+                      </span>
+                    </h5>
+                    <br>
+                    <h4>AED285.00</h4>
+                    <h4>Layers of pure decadence -a moist chocolate sponge...</h4>
+                    <a href="#home"><h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:palevioletred ;">Read more</h4></a>
+
+                </div>
+              </div>
+
+
+              <div class="col-sm-4 thumbnail box"  style="border-radius: 20px; margin: 10px; width: 360px; height: 543;"> 
+                <img src="images/10.jpg" style="width: 100%; border-radius: 20px; height: 300px;">
+                <div class="caption" style="padding: 15px;" >
+                  
+                    <h5 style="font-family: cursive; color: palevioletred;">
+                      <b>Strawberry Cheesecake</b>
+                      <br>
+                      <br>
+                      <br>
+                      <sapn style="font-family: cursive; background-color: palevioletred; color: white; padding: 12px; border-radius: 30px;">
+                        <i class="fa fa-cart-shopping"></i> ADD TO CART
+                      </span>
+                    </h5>
+                    <br>
+                    <h4>AED265.00</h4>
+                    <h4>A silky smooth and creamy New York style cheesecak...</h4>
+                    <a href="#home"><h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:palevioletred ;">Read more</h4></a>
+
+                </div>
+              </div>
+
+
+              <div class="col-sm-4 thumbnail box"  style="border-radius: 20px; margin: 10px; width: 360px; height: 543;"> 
+                <img src="images/11.jpg" style="width: 100%; border-radius: 20px; height: 300px;">
+                <div class="caption" style="padding: 15px;" >
+                  
+                    <h5 style="font-family: cursive; color: palevioletred;">
+                      <b>Carrot Cake</b>
+                      <br>
+                      <br>
+                      <br>
+                      <sapn style="font-family: cursive; background-color: palevioletred; color: white; padding: 12px; border-radius: 30px;">
+                        <i class="fa fa-cart-shopping"></i> ADD TO CART
+                      </span>
+                    </h5>
+                    <br>
+                    <h4>AED190.00</h4>
+                    <h4>This is the best carrot cake in town. A definite c...</h4>
+                    <a href="#home"><h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:palevioletred ;">Read more</h4></a>
+
+                </div>
+              </div>
+
+
+              <div class="col-sm-4 thumbnail box"  style="border-radius: 20px; margin: 10px; width: 360px; height: 543;"> 
+                <img src="images/12.jpg" style="width: 100%; border-radius: 20px; height: 300px;">
+                <div class="caption" style="padding: 15px;" >
+                  
+                    <h5 style="font-family: cursive; color: palevioletred;">
+                      <b>Choco Loco Cake</b>
+                      <br>
+                      <br>
+                      <br>
+                      <sapn style="font-family: cursive; background-color: palevioletred; color: white; padding: 12px; border-radius: 30px;">
+                        <i class="fa fa-cart-shopping"></i> ADD TO CART
+                      </span>
+                    </h5>
+                    <br>
+                    <h4>AED250.00</h4>
+                    <h4>It took us a while to get this chocolate cake just...</h4>
+                    <a href="#home"><h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:palevioletred ;">Read more</h4></a>
+
+                </div>
+              </div>
+
+
+              <div class="col-sm-4 thumbnail box"  style="border-radius: 20px; margin: 10px; width: 360px; height: 543;"> 
+                <img src="images/13.jpg" style="width: 100%; border-radius: 20px; height: 300px;">
+                <div class="caption" style="padding: 15px;" >
+                  
+                    <h5 style="font-family: cursive; color: palevioletred;">
+                      <b>Cake Bites</b>
+                      <br>
+                      <br>
+                      <br>
+                      <sapn style="font-family: cursive; background-color: palevioletred; color: white; padding: 12px; border-radius: 30px;">
+                        <i class="fa fa-cart-shopping"></i> ADD TO CART
+                      </span>
+                    </h5>
+                    <br>
+                    <h4>AED130.00</h4>
+                    <h4>We've recreated our top selling cakes into delicio...</h4>
+                    <a href="#home"><h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:palevioletred ;">Read more</h4></a>
+
+                </div>
+              </div>
+
+
+              <div class="col-sm-4 thumbnail box"  style="border-radius: 20px; margin: 10px; width: 360px; height: 543;"> 
+                <img src="images/14.jpg" style="width: 100%; border-radius: 20px; height: 300px;">
+                <div class="caption" style="padding: 15px;" >
+                  
+                    <h5 style="font-family: cursive; color: palevioletred;">
+                      <b>Cake Bites</b>
+                      <br>
+                      <br>
+                      <br>
+                      <sapn style="font-family: cursive; background-color: palevioletred; color: white; padding: 12px; border-radius: 30px;">
+                        <i class="fa fa-cart-shopping"></i> ADD TO CART
+                      </span>
+                    </h5>
+                    <br>
+                    <h4>AED130.00</h4>
+                    <h4>We've recreated our top selling cakes into delicio...</h4>
+                    <a href="#home"><h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:palevioletred ;">Read more</h4></a>
+
+                </div>
+              </div>
+
+
+              <div class="col-sm-4 thumbnail box"  style="border-radius: 20px; margin: 10px; width: 360px; height: 543;"> 
+                <img src="images/15.jpg" style="width: 100%; border-radius: 20px; height: 300px;">
+                <div class="caption" style="padding: 15px;" >
+                  
+                    <h5 style="font-family: cursive; color: palevioletred;">
+                      <b>Cake Bites</b>
+                      <br>
+                      <br>
+                      <br>
+                      <sapn style="font-family: cursive; background-color: palevioletred; color: white; padding: 12px; border-radius: 30px;">
+                        <i class="fa fa-cart-shopping"></i> ADD TO CART
+                      </span>
+                    </h5>
+                    <br>
+                    <h4>AED130.00</h4>
+                    <h4>We've recreated our top selling cakes into delicio...</h4>
+                    <a href="#home"><h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:palevioletred ;">Read more</h4></a>
+
+                </div>
+              </div>
+
+
+              <div class="col-sm-4 thumbnail box"  style="border-radius: 20px; margin: 10px; width: 360px; height: 543;"> 
+                <img src="images/16.jpg" style="width: 100%; border-radius: 20px; height: 300px;">
+                <div class="caption" style="padding: 15px;" >
+                  
+                    <h5 style="font-family: cursive; color: palevioletred;">
+                      <b>Kunafeh Cheesecake</b>
+                      <br>
+                      <br>
+                      <br>
+                      <sapn style="font-family: cursive; background-color: palevioletred; color: white; padding: 12px; border-radius: 30px;">
+                        <i class="fa fa-cart-shopping"></i> ADD TO CART
+                      </span>
+                    </h5>
+                    <br>
+                    <h4>AED130.00</h4>
+                    <h4>Here’s our famous hybrid dessert, all the flavor...</h4>
+                    <a href="#home"><h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:palevioletred ;">Read more</h4></a>
+
+                </div>
+              </div>
+
+
+              <div class="col-sm-4 thumbnail box"  style="border-radius: 20px; margin: 10px; width: 360px; height: 543;"> 
+                <img src="images/17.jpg" style="width: 100%; border-radius: 20px; height: 300px;">
+                <div class="caption" style="padding: 15px;" >
+                  
+                    <h5 style="font-family: cursive; color: palevioletred;">
+                      <b>Ramadan Kareem Moon Cake</b>
+                      <br>
+                      <br>
+                      <br>
+                      <sapn style="font-family: cursive; background-color: palevioletred; color: white; padding: 12px; border-radius: 30px;">
+                        <i class="fa fa-cart-shopping"></i> ADD TO CART
+                      </span>
+                    </h5>
+                    <br>
+                    <h4>AED250.00</h4>
+                    <h4>A delicious chocolate cake designed especially for...</h4>
+                    <a href="#home"><h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:palevioletred ;">Read more</h4></a>
+
+                </div>
+              </div>
+
+
+              <div class="col-sm-4 thumbnail box"  style="border-radius: 20px; margin: 10px; width: 360px; height: 543;"> 
+                <img src="images/18_.jpg" style="width: 100%; border-radius: 20px; height: 300px;">
+                <div class="caption" style="padding: 15px;" >
+                  
+                    <h5 style="font-family: cursive; color: palevioletred;">
+                      <b>Sticky Date Cake</b>
+                      <br>
+                      <br>
+                      <br>
+                      <sapn style="font-family: cursive; background-color: palevioletred; color: white; padding: 12px; border-radius: 30px;">
+                        <i class="fa fa-cart-shopping"></i> ADD TO CART
+                      </span>
+                    </h5>
+                    <br>
+                    <h4>AED200.00</h4>
+                    <h4>We've transformed the classic British dessert into...</h4>
+                    <a href="#home"><h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:palevioletred ;">Read more</h4></a>
+
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+          </div>
+          <br>
+          <br>
+
+
+
+
+          <!--About the website(short intro)-->
+          
+          <div class="container-fluid bg-2 text-center" style="background-color: #b0cbf4; height: 350px; color: black; padding-top: 80px; font-family: cursive;">
+            <div class="container" style="border-color: black; border-style: solid; margin-top: -40px; margin-bottom: -30px;">
+
+              
+                <h2 style="border-color: rgb(238, 233, 228); margin-bottom: -10x;">
+                    <br>
+                    
+                    We pride ourselves on making real food the old fashioned
+                    <br> way: from the best ingredients, by hand with dedication and
+                    <br> love.
+                    
+                   
+                    </h2>
+                    <a href="#" class="btn btn-default btn-lg">Search</a>
+                    <br>
+                    <br>
+                    <br>
+                    
+                   
+                    
+            </div>
+          </div>
+
+
+
+          <!--Review-->
+
+
+          <div class="container-fluid">
+
+            <div id="myCarousel1" class="carousel slide" data-ride="carousel" style="margin-top: -20px; margin-left: -15px; margin-right: -15px;">
+
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel1" data-slide-to="1"></li>
+                <li data-target="#myCarousel1" data-slide-to="2"></li>
+                <li data-target="#myCarousel1" data-slide-to="3"></li>
+              </ol>
+          
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner text-center" style="font-family: cursive; color: black;">
+          
+                <div class="item active">
+                  <img src="images/hd1.png" alt="Los Angeles" style="width:100%; height: 400px;"> 
+                  <div class="carousel-caption" style="position: absolute; top: 10px; ">
+                    <h1>WHAT PEOPLE ARE SAYING ABOUT US</h1>
+                    <h3>
+                      SugarMoo has a great selection of brownies, cupcakes, cookies,
+                      cake pops…but it’s the cakes that are wow! Beautifully decorated,
+                      but the difference is that they also taste good! I’ve used them
+                      for several events and the service and products are always good.
+                      Red velvet is an absolute must!
+                      <br>
+                      <br>
+                      - Camilla Iman
+                      <br>
+                      <br>
+
+                      <sapn style=" background-color: rgb(198, 206, 128); color: white; padding: 12px; border-radius: 30px;">
+                        LEAVE A REVIEW
+                      </span>
+
+                      </h3>
+                  </div>
+                </div>
+          
+                <div class="item" style="color: black;">
+                  <img src="images/hd1.png" alt="Chicago" style="width:100%; height: 400px;"> 
+                  <div class="carousel-caption" style="position: absolute; top: 10px;">
+                    <h1>WHAT PEOPLE ARE SAYING ABOUT US</h1>
+                    <h3>
+                      I ordered personalized cupcakes from them for an event for
+                       delivery and the lovely Nefeli from Sugarmoo contacted me 
+                       straight away to take my order and to make sure I got exactly what I wanted.
+                      <br>
+                      <br>
+                      - Reyma Abraham
+                      <br>
+                      <br>
+
+                      <sapn style=" background-color: rgb(198, 206, 128); color: white; padding: 12px; border-radius: 30px;">
+                        LEAVE A REVIEW
+                      </span>
+
+                      </h3>
+                  </div> 
+                                 
+                </div>
+              
+                <div class="item" style="color: black;">
+                  <img src="images/hd1.png" alt="New York" style="width:100%; height: 400px;">  
+                  <div class="carousel-caption" style="position: absolute; top: 10px;">
+                    <h1>WHAT PEOPLE ARE SAYING ABOUT US</h1>
+                    <h3>
+                      Sugarmoo – A play on the names ( sugar and milk – the essential ingredients in baking),
+                       Sugarmoo is definitely one of the best dessert places to order from Dubai! I have a couple
+                        of favorites, the red velvet, and Oreo cookies medley is the best birthday cake I have 
+                        ever had! 
+                      <br>
+                      <br>
+                      - Nadia Vasele
+                      <br>
+                      <br>
+
+                      <sapn style=" background-color: rgb(198, 206, 128); color: white; padding: 12px; border-radius: 30px;">
+                        LEAVE A REVIEW
+                      </span>
+
+                      </h3>
+                  </div>              
+                </div>
+
+                <div class="item" style="color: black;">
+                    <img src="images/hd1.png" alt="New York" style="width:100%; height: 400px;">   
+                    <div class="carousel-caption" style="position: absolute; top: 10px;">
+                      <h1>WHAT PEOPLE ARE SAYING ABOUT US</h1>
+                      <h3>
+                        I ordered a birthday cake from Sugarmoo and I couldn’t be more satisfied.
+                         The cake was stunning. It was even better than the picture I sent them. 
+                         I was worried about the taste, since usually this type of cake is visually 
+                         pleasing but sickeningly sweet.
+                        <br>
+                        <br>
+                        - Shaddi Kabbesh
+                        <br>
+                        <br>
+  
+                        <sapn style=" background-color: rgb(198, 206, 128); color: white; padding: 12px; border-radius: 30px;">
+                          LEAVE A REVIEW
+                        </span>
+  
+                        </h3>
+                    </div>             
+                  </div>
+            
+              </div>
+          
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+
+
+          
+
+
+
+          <!--Make it Yours-->
+
+
+          <div class=" container-fluid text-center" style="background-color:rgb(224, 184, 236);">
+            <div class="row text-center" >
+
+              <div class="col-md-5" style="padding-top: 220px; padding-left: 30px; font-family: cursive;">
+
+                <h2 style="font-family:cursive;">
+                  MAKE IT YOURS
+                </h2>
+                <h3 style="font-family:cursive;">
+                  We love what we do and this why we take on a very personal approach
+                  
+                  to cater to any party you have: Birthdays, Weddings, Baby Showers,
+                  
+                  Corporate Events…you name it!
+                  <br>
+                  <br>
+                  <br>
+                </h3>
+                
+
+                <h4>
+
+                  <sapn style="font-family: cursive; background-color: rgb(101, 80, 160); color: white; padding: 12px; border-radius: 30px;">
+                    CREATE YOUR OWN CAKE
+                  </span>
+                   
+
+
+                </h4>
+                
+              
+              
+              </div>
+
+              <div class="col-md-7" >
+
+                <img class="images" src="images/make it yours.jpg" style="border-radius: 20px; margin: 50px; height: 600px; width: 650px; ">
+                
+              
+              
+              
+              </div>
+            </div>
+            
+
+          </div>
+
+
+
+
+
+
+          <!--About Us-->
+
+
+          <div class=" container-fluid text-center" style="background-color:palevioletred;">
+            <div class="row text-center" >
+
+              <div class="col-md-4">
+                <img class="images" src="images/aboutusjpeg.jpeg" style="border-radius: 20px; margin: 50px; height: 500px;width: 500px; ">
+              
+              
+              </div>
+
+              <div class="col-md-8" style="margin-top: 120px; padding-left: 30px; color: white; font-family: cursive;">
+                <h2 style="color: white; font-family: cursive;">
+                  About Us
+                </h2 style="color: white; font-family: cursive;">
+                <h3>
+                  We are the first online dessert & cake delivery business in Dubai UAE
+                  <br>
+                  that delivers desserts to your door. Our motto, ‘’You Crave. We Deliver.’’,
+                  <br>
+                  promises just that! Rated as one of Dubai’s best dessert spots, at
+                  <br>
+                  SugarMoo, we like to do things differently. All our desserts are freshly
+                  <br>
+                  baked daily at the SugarMoo HQ in Dubai, UAE and then delivered to
+                  <br>
+                  homes and businesses across Dubai (in) under 60 minutes. We are the
+                  <br>
+                  first unique dessert concept in the region. You can find our desserts
+                  <br>
+                  labs at Nakheel Mall on the Palm, at Gate District 2 in DIFC and at
+                  <br>
+                  Huna in Yas Mall in Abu Dhabi.
+                </h3>
+              
+              
+              </div>
+            </div>
+            
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+          <!--Footer-->
+
+          <div class="footer pt-5" style="height: 400px;">
+            <div class="container" style="padding-top: 50px;">
+              <div class="row">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-5">
+                  <div class="footer_section">
+                    <h4>Links</h4>
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Docs</a></li>
+                      <li><a href="#">Examples</a></li>
+                      <li><a href="#">Icons</a></li>
+                      <li><a href="#">Themes</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Swag Store</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-5">
+                  <div class="footer_section">
+                    <h4>Guides</h4>
+                    <ul>
+                      <li><a href="#">Getting started</a></li>
+                      <li><a href="#">Starter template</a></li>
+                      <li><a href="#">Webpack</a></li>
+                      <li><a href="#">Parcel</a></li>
+                      <li><a href="#">Vite</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-5">
+                  <div class="footer_section">
+                    <h4>Projects</h4>
+                    <ul>
+                      <li><a href="#">Bootstrap 5</a></li>
+                      <li><a href="#">Bootstrap 4</a></li>
+                      <li><a href="#">Icons</a></li>
+                      <li><a href="#">RFS</a></li>
+                      <li><a href="#">npm starter</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-12 col-lg-3 mb-5">
+                  <div class="row">
+                    <div
+                      class="col-sm-12 col-md-6 col-lg-12 footer_section footer_section_contact"
+                    >
+                      <h4>Contact Us</h4>
+                      <div class="search">
+                        <form action="#" class="subscribe">
+                          <input
+                            type="email"
+                            class="contact_input"
+                            placeholder="E-mail address"
+                          />
+                          <button type="submit" class="submit_button">
+                            <i class="fa fa-paper-plane"></i>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-12 social_media">
+                      <h4>Follow Up</h4>
+                      <ul>
+                        <li>
+                          <a href=""><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                          <a href=""><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                          <a href=""><i class="fab fa-google-plus-g"></i></a>
+                        </li>
+                        <li>
+                          <a href=""><i class="fab fa-instagram"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          
+
+    </body>
+      
+    
+</html>
